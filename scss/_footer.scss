@@ -1,0 +1,41 @@
+@use 'variables' as v;
+
+.footer {
+    background: #191919;
+    padding-top: 56px;
+    padding-bottom: 56px;
+
+    .footer-container {
+        .footer-list {
+            width: 792px;
+            @include v.flex(space-between);
+
+            .footer__heading {
+                margin-bottom: 16px;
+                @include v.infoHeading;
+                color: #FFFFFF;
+            }
+
+            .footer__desc {
+                width: 320px;
+                @include v.desc;
+                color: #FFFFFF;
+            }
+
+            .footer-item-list-item {
+                margin-bottom: 16px;
+
+                .footer-span {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .footer-logo {
+                    margin: 8px;
+                }
+            }
+
+
+        }
+    }
+}

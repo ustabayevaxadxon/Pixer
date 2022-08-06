@@ -1,0 +1,191 @@
+@use 'variables' as v;
+
+.hero-section {
+    .hero-container {
+        @include v.flex(space-between);
+        align-items: center;
+        height: 418px;
+    }
+
+    .hero__heading {
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 130%;
+        color: #000000;
+    }
+
+    .hero__desc {
+        margin-bottom: 24px;
+        @include v.desc;
+    }
+
+    .hero__btn {
+        @include v.btn;
+        border: 0;
+    }
+}
+
+.services-section {
+    .services__heading {
+        text-align: center;
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        color: #000000;
+    }
+
+    .services__desc {
+        @include v.desc;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .services-middle {
+        @include v.flex(space-between);
+        margin-bottom: 48px;
+    }
+
+    .services-bottom {
+        @include v.flex(space-evenly)
+    }
+
+    .middle-box {
+        @include v.flex(space-evenly);
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        width: 320px;
+        height: 260px;
+    }
+
+    .services-order__btn {
+        @include v.btn;
+        border: 0;
+        margin-right: 16px;
+    }
+
+    .services-order__link {
+        text-decoration: underline;
+        color: #00BAFC;
+    }
+
+    .services-order {
+        @include v.flex(center);
+        align-items: center;
+        margin-top: 40px;
+    }
+}
+
+.info-section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    .info-container {
+        width: 832px;
+        @include v.flex(space-between);
+        flex-direction: column;
+        align-items: center;
+
+        .info__heading {
+            margin-bottom: 16px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 130%;
+            text-align: center;
+            color: #000000;
+        }
+
+        .info__desc {
+            width: 719px;
+            margin-bottom: 16px;
+            margin: 0 auto;
+            @include v.desc;
+            text-align: center
+        }
+
+        .info-list {
+            @include v.flex(space-between);
+            flex-direction: column;
+
+            .info-item {
+                @include v.flex(space-between);
+                align-items: center;
+                margin-bottom: 48px;
+
+                .info-item-box__title {
+                    margin-bottom: 8px;
+                    @include v.infoHeading;
+                }
+
+                .info-item-box__text {
+                    width: 480px;
+                    @include v.desc;
+                }
+            }
+        }
+
+        .info__btn {
+            @include v.btn;
+            border: 0;
+        }
+    }
+}
+
+.order-section {
+    background: #00BAFC;
+    padding-top: 56px;
+    padding-bottom: 64px;
+    .order-container {
+        @include v.flex(space-between);
+        flex-direction: column;
+        align-items: center;
+
+        .order__heading {
+            margin-bottom: 16px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 130%;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .order__desc {
+            width: 719px;
+            margin-bottom: 24px;
+            text-align: center;
+            @include v.desc;
+            color: #FFFFFF;
+        }
+
+        .order-form {
+            background: white;
+            width: 348px;
+            height: 320px;
+            padding: 24px;
+            @include v.flex(space-between);
+            align-items: center;
+            flex-direction: column;
+
+            .order-form__input,
+            .order-form__option {
+                width: 100%;
+                padding: 16px;
+                background: #F3F3F3;
+                border: 0;
+                border-radius: 5px;
+                color: #000000;
+            }
+
+            ::placeholder {
+                color: #000000;
+            }
+
+            .order__btn {
+                @include v.btn;
+                border: 0;
+            }
+        }
+    }
+}
