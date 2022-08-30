@@ -11,6 +11,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+#body.dark {
+  background: #191919;
+}
+
 .container {
   margin: 0 auto;
   width: 1100px;
@@ -27,6 +31,10 @@ a::before {
 }
 
 .header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: teal;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 .header .nav {
@@ -34,6 +42,9 @@ a::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header .nav img {
+  color: aqua;
 }
 .header .nav-list {
   display: flex;
@@ -50,11 +61,16 @@ a::before {
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
-  background: #00BAFC;
+  background: #00bafc;
   border-radius: 5px;
   padding: 8px 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
+}
+.header .dark-btn {
+  border: 0;
+  cursor: pointer;
+  text-transform: capitalize;
 }
 
 .hero-section .hero-container {
@@ -81,10 +97,10 @@ a::before {
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
-  background: #00BAFC;
+  background: #00bafc;
   border-radius: 5px;
   padding: 8px 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   border: 0;
 }
@@ -128,10 +144,10 @@ a::before {
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
-  background: #00BAFC;
+  background: #00bafc;
   border-radius: 5px;
   padding: 8px 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   border: 0;
   margin-right: 16px;
@@ -204,10 +220,10 @@ a::before {
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
-  background: #00BAFC;
+  background: #00bafc;
   border-radius: 5px;
   padding: 8px 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   border: 0;
 }
@@ -273,12 +289,21 @@ a::before {
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
-  background: #00BAFC;
+  background: #00bafc;
   border-radius: 5px;
   padding: 8px 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   border: 0;
+}
+.order-section .order-container .order-form .placeholder-color::-moz-placeholder {
+  color: #FFFFFF;
+}
+.order-section .order-container .order-form .placeholder-color:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.order-section .order-container .order-form .placeholder-color::placeholder {
+  color: #FFFFFF;
 }
 
 .footer {

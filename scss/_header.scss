@@ -1,6 +1,9 @@
-@use 'variables' as v;
+@use "variables" as v;
 
 .header {
+    position: sticky;
+    top: 0;
+    background: teal;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 
     .nav {
@@ -9,6 +12,10 @@
         align-items: center;
     }
 
+    .nav img {
+        color: aqua
+    }
+    
     .nav-list {
         @include v.flex(space-between);
         width: 600px;
@@ -23,5 +30,11 @@
 
     .nav-btn {
         @include v.btn;
+    }
+
+    .dark-btn {
+        border: 0;
+        cursor: pointer;
+        text-transform: capitalize;
     }
 }

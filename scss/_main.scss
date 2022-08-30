@@ -186,6 +186,10 @@
                 @include v.btn;
                 border: 0;
             }
+
+            .placeholder-color::placeholder {
+                color: #FFFFFF;
+            }
         }
     }
 }
